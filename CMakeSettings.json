@@ -1,0 +1,52 @@
+{
+  "configurations": [
+    {
+      "name": "Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\build\\msvc\\${name}",
+      "installRoot": "${projectDir}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "C:\\Workspace\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake"
+        },
+        {
+          "name": "VCPKG_CHAINLOAD_TOOLCHAIN_FILE",
+          "value": "C:\\Workspace\\vcpkg\\scripts\\toolchains\\windows.cmake"
+        },
+        { "name": "VCPKG_TARGET_TRIPLET", "value": "${env.VCPKG_DEFAULT_TRIPLET}" },
+        { "name": "CMAKE_INSTALL_PREFIX", "value": "${projectDir}" },
+        { "name": "CMAKE_VERBOSE_MAKEFILE", "value": "OFF" }
+      ]
+    },
+    {
+      "name": "Release",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\build\\msvc\\${name}",
+      "installRoot": "${projectDir}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "C:\\Workspace\\vcpkg\\scripts\\buildsystems\\vcpkg.cmake"
+        },
+        {
+          "name": "VCPKG_CHAINLOAD_TOOLCHAIN_FILE",
+          "value": "C:\\Workspace\\vcpkg\\scripts\\toolchains\\windows.cmake"
+        },
+        { "name": "VCPKG_TARGET_TRIPLET", "value": "${env.VCPKG_DEFAULT_TRIPLET}" },
+        { "name": "CMAKE_INSTALL_PREFIX", "value": "${projectDir}" },
+        { "name": "CMAKE_VERBOSE_MAKEFILE", "value": "OFF" }
+      ]
+    }
+  ]
+}
